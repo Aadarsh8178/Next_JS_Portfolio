@@ -24,6 +24,18 @@ export const projects = [
     id: 1,
   },
   {
+    title: "Nodejs UpRuntime  (Fullstack + CLI Tool)",
+    description:
+      "Web app to sign up a user and create checks to do uptime monitoring for HTTP/HTTPS sites. Self Made Token Authentication logic and self created template logic using vanilla javascript",
+    learning: `
+      Nodejs , No Npm modules , CLI Tool for admin, Self Created Template logic , Javascript , Bootstrap,
+      `,
+    image: "/images/upruntime.jpeg",
+    tags: ["Nodejs", "Node Core Modules"],
+    visit: "https://github.com/Aadarsh8178/UpRuntime-fileStorage-",
+    id: 8,
+  },
+  {
     title: "Nextjs Looks",
     description:
       "You can add items to favourites and then cart on selecting single item you will see option to buy which will redirect you to actual product link, data will be saved in local storage of browser, the site is incomplete and made for just learning purpose (next js) . No CSS framework is used all styles and transtions are custom css and the design is inspired by existing e-commerce sites (myntra, vegnonveg, H&M)",
@@ -110,18 +122,6 @@ export const projects = [
     source: "https://bpc-github-finder.herokuapp.com/",
     visit: "https://github.com/Aadarsh8178/Github-Finder",
     id: 7,
-  },
-  {
-    title: "Nodejs UpRuntime  (Fullstack + CLI Tool)",
-    description:
-      "Web app to sign up a user and create checks to do uptime monitoring for HTTP/HTTPS sites. Self Made Token Authentication logic and self created template logic using vanilla javascript",
-    learning: `
-      Nodejs , No Npm modules , CLI Tool for admin, Self Created Template logic , Javascript , Bootstrap,
-      `,
-    image: "/images/upruntime.jpeg",
-    tags: ["Nodejs", "Node Core Modules"],
-    visit: "https://github.com/Aadarsh8178/UpRuntime-fileStorage-",
-    id: 8,
   },
 ];
 
