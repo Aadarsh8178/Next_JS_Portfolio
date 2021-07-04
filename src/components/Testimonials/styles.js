@@ -57,4 +57,7 @@ export const TestimonialItem = styled.div`
       font-style: italic;
     }
   }
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 320px;
+  }
 `;
