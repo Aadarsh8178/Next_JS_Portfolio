@@ -1,15 +1,26 @@
-import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import React from "react";
+import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import {
+  Section,
+  SectionDivider,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import {
+  List,
+  ListContainer,
+  ListItem,
+  ListParagraph,
+  ListTitle,
+} from "./TechnologiesStyles";
 
-const Technologies = () =>  (
-  <Section id="tech">
+const Technologies = () => (
+  <Section id="tech" nopadding>
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      I've worked with a range a technologies in the web development world. From
+      Front-end To Backend
     </SectionText>
     <List>
       <ListItem>
@@ -20,7 +31,17 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experiece with <br />
-            React.js
+            <span className="badge bg-info me-2">Reactjs</span>
+            <span className="badge bg-info me-2">Nextjs</span>
+            <span className="badge bg-info me-2">Angularjs</span>
+            <span className="badge bg-info me-2">Vuejs</span>
+            <span className="badge bg-info me-2">Redux</span>
+            <span className="badge bg-info me-2">Styled Components</span>
+            <span className="badge bg-info me-2">React hook form</span>
+            <span style={{ fontSize: "15px", display: "block" }}>
+              ( 2+ year experience in React including course work and
+              internships )
+            </span>{" "}
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -32,24 +53,15 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node and Databases
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
-      <ListItem>
-        <picture>
-          <DiZend size="3rem" />
-        </picture>
-        <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            tools like Figma
+            <span className="badge bg-info me-2">Nodejs</span>
+            <span className="badge bg-info me-2">Express</span>
+            <span className="badge bg-info me-2">Firebase</span>
+            <span className="badge bg-info me-2">.Net</span>
+            <span className="badge bg-info me-2">MongoDB</span>
           </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
-    <SectionDivider colorAlt />
   </Section>
 );
 

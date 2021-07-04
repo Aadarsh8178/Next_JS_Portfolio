@@ -1,40 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import ProjectCard from "./ProjectCard";
+import { GridContainer, ViewAll } from "./ProjectsStyles";
+import {
+  Section,
+  SectionDivider,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import { projects } from "../../constants/constants";
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
-
-const Projects = () => (
-  <Section nopadding id="projects">
-    <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
-    <GridContainer>
-      {projects.map((p, i) => {
-        return (
-          <BlogCard key={i}>
-          <Img src={p.image} />
-            <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo className="card-info">{p.description}</CardInfo>
-            <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {p.tags.map((t, i) => {
-                  return <Tag key={i}>{t}</Tag>;
-                })}
-              </TagList>
+const Projects = () => {
+  const [projectsToMap, setProjectsToMap] = useState([]);
+  const [viewAll, setViewAll] = useState(false);
+  useEffect(() => {
+    let projectsToMap = [];
+    if (viewAll) projectsToMap = projects;
+    else projectsToMap = projects.slice(0, 4);
+    setProjectsToMap(projectsToMap);
+  }, [viewAll]);
+  return (
+    <Section nopadding id="projects" className="mt-5">
+      <br />
+      <br />
+      <SectionDivider divider />
+      <SectionTitle>Projects</SectionTitle>
+      <GridContainer className="d-flex flex-wrap">
+        {projectsToMap.map((p, i) => {
+          return (
+            <div
+              key={i}
+              className="col-12 col-md-6"
+              style={{ margin: "4rem 0" }}
+            >
+              <ProjectCard p={p} />
             </div>
-            <UtilityList>
-              <ExternalLinks href={p.visit}>Code</ExternalLinks>
-              <ExternalLinks href={p.source}>Source</ExternalLinks>
-            </UtilityList>
-          </BlogCard>
-        );
-      })}
-    </GridContainer>
-  </Section>
-);
+          );
+        })}
+        <ViewAll className="col-12">
+          <span className="text-end" onClick={() => setViewAll((p) => !p)}>
+            {viewAll ? "View less" : "View All"}
+          </span>
+        </ViewAll>
+      </GridContainer>
+    </Section>
+  );
+};
 
 export default Projects;
