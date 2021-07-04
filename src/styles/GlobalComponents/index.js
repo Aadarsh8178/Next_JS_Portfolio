@@ -206,6 +206,13 @@ export const ButtonBack = styled.div`
     height: ${({ alt }) => (alt ? "52px" : "48px")};
     font-size: ${({ alt }) => (alt ? "20px" : "16px")};
     margin-bottom: ${({ alt }) => (alt ? "0" : "64px")};
+    ${({ circle }) =>
+      circle &&
+      css`
+        width: 35px !important;
+        height: 35px !important;
+        border-radius: 50%;
+      `}
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -213,6 +220,13 @@ export const ButtonBack = styled.div`
     height: 40px;
     font-size: 14px;
     margin-bottom: ${({ alt }) => (alt ? "0" : "32px")};
+    ${({ circle }) =>
+      circle &&
+      css`
+        width: 35px !important;
+        height: 35px !important;
+        border-radius: 50%;
+      `}
   }
 `;
 
