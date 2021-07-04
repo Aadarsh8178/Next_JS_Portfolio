@@ -88,7 +88,9 @@ function Carousel({ slides }) {
               }}
             >
               <img src={slide.img} alt="img" />
-              <p>{slide.desc}</p>
+              <p style={{ fontSize: "16px", textAlign: "center" }}>
+                {slide.desc}
+              </p>
             </SliderCard>
           </Slide>
         ))}
