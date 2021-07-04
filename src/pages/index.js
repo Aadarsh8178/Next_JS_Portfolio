@@ -24,6 +24,9 @@ const Home = () => {
       <Contact />
       <style jsx global>
         {`
+          html {
+            scroll-behavior: smooth;
+          }
           body {
             width: 100vw;
             overflow-x: hidden;

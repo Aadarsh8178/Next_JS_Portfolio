@@ -6,7 +6,13 @@ export const projects = [
     learning:
       "Angular , Learnt Angular basics , Data binding, Directives , Services , Dependency injection, Routing, Observables, Angular Forms , Pipes ,Making HTTP requests , Authentication, NgRx , Firebase ",
     image: "/images/angular_recipe.jpeg",
-    tags: ["Angular", "NgRx", "Angular Forms", "Routing", "Firebase"],
+    tags: [
+      "Angular",
+      "NgRx",
+      "Angular Forms",
+      "Routing in Angular",
+      "Firebase",
+    ],
     source: "https://dazzling-cori-8bfcfa.netlify.app/",
     visit: "https://github.com/Aadarsh8178/Recipe-app-angular",
     id: 0,
@@ -18,9 +24,9 @@ export const projects = [
     learning:
       "Vuejs , Learnt Basics of Vuejs, Data binding, Directives ,Forms , Animations and Transitions, Routing, Vuex, Vue-resource for HTTP calls",
     image: "/images/vue_stock_trader.jpeg",
-    tags: ["React", "JavaScript"],
-    source: "https://google.com",
-    visit: "https://google.com",
+    tags: ["Vuejs", "Vuex", "Routing in Vuejs"],
+    source: "https://vue-stock-trader.vercel.app/",
+    visit: "https://github.com/Aadarsh8178/vue-stock-trader",
     id: 1,
   },
   {
@@ -54,7 +60,14 @@ export const projects = [
     learning:
       "React , Class based React components, LifeCycle of React Components, Higher Order function , Error handling, React-Router, Redux , Redux Thunk , Firebase Realtime database, Firebase Authentication",
     image: "/images/react_burger_builder.jpeg",
-    tags: ["React", "ChatEngine", "Firebase"],
+    tags: [
+      "React",
+      "Redux",
+      "Redux Thunk",
+      "React-Router",
+      "Firebase Authentication",
+      "Firebase",
+    ],
     source: "https://burger-builder-react-2d2be.firebaseapp.com/",
     visit: "https://github.com/Aadarsh8178/React-Burger-Builder",
     id: 3,
