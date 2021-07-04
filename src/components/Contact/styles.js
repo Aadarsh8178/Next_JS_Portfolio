@@ -40,7 +40,6 @@ export const FormInput = styled.div`
   }
   @media ${(props) => props.theme.breakpoints.md} {
     padding: 0 !important;
-    padding-right: 2rem !important;
   }
 `;
 
