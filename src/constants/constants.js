@@ -138,14 +138,68 @@ export const projects = [
   },
 ];
 
-export const TimeLineData = [
-  { year: "2020 May", text: "Freelance Developer", company: "Social Rect" },
-  { year: "2020 June", text: "Software Engineer Intern", company: "Zedblox" },
-  { year: "2020 Oct", text: "Jr. Software Engineer ", company: "Casa Melhor" },
-  { year: "2021 Jan", text: "SDE 1 Intern", company: "Exxat Systems" },
-  { year: "2021 July", text: "SDE 1", company: "Exxat Systems" },
+export const ExperienceTimeLineData = [
+  {
+    year: "2020",
+    duration: "May - Aug",
+    text: "Freelance Developer",
+    company: "Social Rect",
+    tech: ["Reactjs", "Nextjs", "React Hook Form", "Firebase", "Bootstrap"],
+  },
+  {
+    year: "2020",
+    duration: "June - Aug",
+    text: "Software Engineer Intern",
+    company: "Zedblox",
+    tech: [
+      "Reactjs",
+      "React Hook Form",
+      "Bootstrap",
+      "Material UI",
+      "Styled Component",
+      "Mapbox",
+      "Google Maps",
+    ],
+  },
+  {
+    year: "2020",
+    duration: "Oct - Jan",
+    text: "Jr. Software Engineer ",
+    company: "Casa Melhor",
+    tech: ["Vuejs", "Bootstrap", "Threejs", "React Three Fiber"],
+  },
+  {
+    year: "2021",
+    duration: "Jan - May",
+    text: "SDE 1 Intern",
+    company: "Exxat Systems",
+    tech: ["Angular", "C#", ".NET", "Azure Cosmos"],
+  },
+  {
+    year: "2021",
+    duration: "June - *",
+    text: "SDE 1",
+    company: "Exxat Systems",
+    tech: ["Angular", "C#", ".NET", "Azure Cosmos"],
+  },
 ];
 
+export const EducationTimeLineData = [
+  {
+    year: "2017",
+    duration: "2017 May - 2021 May",
+    text: "Computer Engineering",
+    institution: "Delhi Technological University",
+    marks: "CGPA : 8.07/10",
+  },
+  {
+    year: "2016",
+    duration: "2016 March - 2017 March",
+    text: "Non Med. Science",
+    institution: "Deepanshu Public School",
+    marks: "Percentage : 90.8%",
+  },
+];
 export const companies = [
   {
     desc: [

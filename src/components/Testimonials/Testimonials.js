@@ -70,6 +70,7 @@ function Testimonials(props) {
       <CarouselContainer
         ref={carouselRef}
         onScroll={handleScroll}
+        style={{ marginLeft: "0" }}
         className="justify-content-start"
       >
         <>
@@ -83,7 +84,7 @@ function Testimonials(props) {
                 id={`carousel__item-${index}`}
                 active={activeItem}
                 onClick={(e) => handleClick(e, index)}
-                style={{ maxWidth: "380px", width: "380px", height: "100%" }}
+                style={{ maxWidth: "380px", minWidth: "350px", height: "100%" }}
               >
                 <TestimonialItem>
                   <div>

@@ -85,11 +85,6 @@ export const CarouselItemTitle = styled.h4`
     line-height: 28px;
     margin-bottom: 4px;
   }
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 16px;
-    line-height: 24px;
-  }
 `;
 export const CarouselItemImg = styled.svg`
   margin-left: 21px;
@@ -113,7 +108,9 @@ export const CarouselItemText = styled.p`
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.75);
   padding-right: 16px;
-
+  transition: all 0.3s ease;
+  color: ${({ active }) => active && "#6b3030 !important"};
+  font-weight: ${({ active }) => active && "bold"};
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 14px;
     line-height: 18px;
@@ -160,4 +157,17 @@ export const CarouselButtonDot = styled.div`
   margin: auto;
   width: 3px;
   height: 3px;
+`;
+
+export const AboutHeader = styled.div`
+  display: flex;
+  & p {
+    font-size: 24px;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    &:hover {
+      color: #9cc9e3;
+    }
+  }
+  margin-bottom: 2rem;
 `;
