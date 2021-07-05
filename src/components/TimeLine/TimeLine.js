@@ -16,10 +16,9 @@ const Timeline = () => {
       <SectionDivider divider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        Software engineer with excellent problem solving skills and ability to
-        perform well in a team. Passionate about coding with keen interest in
-        web development. Dedicated with a zeal to learn new technologies and
-        grow.
+        I'm Aadarsh, a CSE graduate from DTU. A Software Developer Engineer with
+        major interest in Frontend web development. Along with coding, my
+        hobbies are Cricket ,Badminton and dancing.
       </SectionText>
       <AboutHeader>
         <CarouselItemText

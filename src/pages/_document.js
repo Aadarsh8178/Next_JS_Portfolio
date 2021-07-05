@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
             integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
             crossOrigin="anonymous"
           ></link>
+          <title>Aadarsh's Portfolio</title>
         </Head>
         <body>
           <Main />
