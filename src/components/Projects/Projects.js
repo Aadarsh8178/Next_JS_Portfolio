@@ -24,6 +24,14 @@ const Projects = () => {
       <SectionDivider divider />
       <SectionTitle>Projects</SectionTitle>
       <GridContainer className="d-flex flex-wrap">
+        <div
+          className="col-12 text-end pe-2 pe-md-5"
+          style={{ marginBottom: "-4rem" }}
+        >
+          <p>
+            Showing {projectsToMap.length} of {projects.length}
+          </p>
+        </div>
         {projectsToMap.map((p, i) => {
           return (
             <div
