@@ -18,7 +18,8 @@ const Timeline = () => {
       <SectionText>
         I'm Aadarsh, a CSE graduate from DTU. A Software Developer Engineer with
         major interest in Frontend web development. Along with coding, my
-        hobbies are Cricket ,Badminton and dancing.
+        hobbies are Cricket ,Badminton and dancing. To know more about me,
+        <a href="#contact"> contact</a> below
       </SectionText>
       <AboutHeader>
         <CarouselItemText
