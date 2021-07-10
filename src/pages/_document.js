@@ -31,6 +31,18 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
+          <meta
+            property="og:url"
+            content="https://laughing-heyrovsky-3172c0.netlify.app/"
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Aadarsh's Portfolio" />
+          <meta name="twitter:card" content="summary" />
+          <meta
+            property="og:description"
+            content="This is my personal portfolio , click on the link to know more"
+          />
+          <meta property="og:image" content={"/images/favicon.png"} />
           <link
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
