@@ -15,6 +15,7 @@ import { sendemail, validateEmail } from "../../utilities";
 import Loader from "../ui/Loader";
 import { Error, FormInput, StyledForm, ContactDetails } from "./styles";
 import { ListTitle } from "../Technologies/TechnologiesStyles";
+import AnimatedSectionTitle from "../ui/AnimatedSectionTitle";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -81,11 +82,15 @@ function Contact() {
   };
   return (
     <Section id="contact">
-      <SectionDivider divider />
-      <SectionTitle>Contact me</SectionTitle>
+      <AnimatedSectionTitle title="Contact me" />
       <br />
       <div className="d-flex flex-wrap">
-        <div className="col-12 col-md-5">
+        <div
+          className="col-12 col-md-5"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="500"
+        >
           <ContactDetails>
             <FiPhone />
             <div>
@@ -108,7 +113,12 @@ function Contact() {
             </div>
           </ContactDetails>
         </div>
-        <div className="col-12 col-md-7">
+        <div
+          className="col-12 col-md-7"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="500"
+        >
           <StyledForm className="w-100">
             <div className="d-flex flex-wrap justify-content-between w-100">
               <FormInput className="col-12 col-md-6" name>

@@ -1,11 +1,7 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
-import {
-  Section,
-  SectionDivider,
-  SectionText,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
+import { DiFirebase, DiReact } from "react-icons/di";
+import { Section, SectionText } from "../../styles/GlobalComponents";
+import AnimatedSectionTitle from "../ui/AnimatedSectionTitle";
 import {
   List,
   ListContainer,
@@ -16,14 +12,21 @@ import {
 
 const Technologies = () => (
   <Section id="tech" nopadding>
-    <SectionDivider divider />
-    <SectionTitle>Technologies</SectionTitle>
-    <SectionText>
+    <AnimatedSectionTitle title="Technologies" />
+    <SectionText
+      data-aos="fade-right"
+      data-aos-duration="700"
+      data-aos-delay="500"
+    >
       I've worked with a range a technologies in the web development world. From
       Front-end To Backend
     </SectionText>
     <List>
-      <ListItem>
+      <ListItem
+        data-aos="fade-right"
+        data-aos-duration="700"
+        data-aos-delay="600"
+      >
         <picture>
           <DiReact size="3rem" />
         </picture>
@@ -45,7 +48,11 @@ const Technologies = () => (
           </ListParagraph>
         </ListContainer>
       </ListItem>
-      <ListItem>
+      <ListItem
+        data-aos="fade-left"
+        data-aos-duration="700"
+        data-aos-delay="600"
+      >
         <picture>
           <DiFirebase size="3rem" />
         </picture>

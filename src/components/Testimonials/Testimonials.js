@@ -16,6 +16,7 @@ import {
 } from "../TimeLine/TimeLineStyles";
 import { TestimonialItem } from "./styles";
 import { testimonials } from "../../constants/constants";
+import AnimatedSectionTitle from "../ui/AnimatedSectionTitle";
 
 const TOTAL_CAROUSEL_COUNT = testimonials.length;
 
@@ -65,8 +66,7 @@ function Testimonials(props) {
     <Section id="testimonials">
       <br />
       <br />
-      <SectionDivider divider />
-      <SectionTitle>Testimonials</SectionTitle>
+      <AnimatedSectionTitle title="Testimonials" />
       <CarouselContainer
         ref={carouselRef}
         onScroll={handleScroll}
@@ -78,6 +78,9 @@ function Testimonials(props) {
             <CarouselMobileScrollNode
               key={index}
               final={index === TOTAL_CAROUSEL_COUNT - 1}
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay={(index + 1) * 500}
             >
               <CarouselItem
                 index={index}

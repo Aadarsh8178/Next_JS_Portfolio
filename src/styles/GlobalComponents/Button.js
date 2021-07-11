@@ -8,6 +8,7 @@ const Button = (props) => (
     form={props.form}
     disabled={props.disabled}
     circle={props.circle}
+    {...props.animate}
   >
     {props.children}
     <ButtonFront

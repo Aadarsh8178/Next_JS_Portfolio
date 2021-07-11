@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { GridContainer, ViewAll } from "./ProjectsStyles";
-import {
-  Section,
-  SectionDivider,
-  SectionTitle,
-} from "../../styles/GlobalComponents";
+import { Section } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
+import AnimatedSectionTitle from "../ui/AnimatedSectionTitle";
 
 const Projects = () => {
   const [projectsToMap, setProjectsToMap] = useState([]);
@@ -21,9 +18,11 @@ const Projects = () => {
     <Section nopadding id="projects" className="mt-5">
       <br />
       <br />
-      <SectionDivider divider />
-      <SectionTitle>Projects</SectionTitle>
-      <GridContainer className="d-flex flex-wrap">
+      <AnimatedSectionTitle title="Projects" />
+      <GridContainer
+        className="d-flex flex-wrap"
+        style={{ overflow: "hidden" }}
+      >
         <div
           className="col-12 text-end pe-2 pe-md-5"
           style={{ marginBottom: "-4rem" }}
@@ -38,6 +37,9 @@ const Projects = () => {
               key={i}
               className="col-12 col-md-6"
               style={{ margin: "4rem 0" }}
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay={i % 2 ? "500" : "200"}
             >
               <ProjectCard p={p} />
             </div>

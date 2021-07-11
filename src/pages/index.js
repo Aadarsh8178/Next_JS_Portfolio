@@ -8,8 +8,14 @@ import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Contact from "../components/Contact";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init({ once: true });
+  }, []);
   return (
     <Layout>
       <Section grid>
