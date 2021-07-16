@@ -9,23 +9,18 @@ import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
 
 const animate = {
-  "data-aos": "fade-in",
-  "data-aos-duration": "500",
-  "data-aos-delay": "1000",
+  fadeIn: true,
+  delay: 1,
 };
 const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
-        <SectionTitle main center data-aos="fade-up" data-aos-duration="500">
+        <SectionTitle main animateUp>
           Welcome To <br />
           My Personal Portfolio
         </SectionTitle>
-        <SectionText
-          data-aos="fade-up"
-          data-aos-duration="500"
-          data-aos-delay="500"
-        >
+        <SectionText animateUp delay={0.5}>
           Passionate about coding with keen interest in web development.
           Dedicated with a zeal to learn new technologies and grow.
         </SectionText>

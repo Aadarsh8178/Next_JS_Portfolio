@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
-    Aos.init({ once: true });
+    Aos.init({ once: true, disable: "mobile" });
   }, []);
   return (
     <Layout>

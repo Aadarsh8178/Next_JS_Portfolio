@@ -1,5 +1,42 @@
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+const fadeInAnimation = keyframes`
+  0% {
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+    transform: translateY(0);
+  }
+`;
+const fadeUpAnimation = keyframes`
+  0% {
+    opacity:0;
+    transform: translateY(25px);
+  }
+  100%{
+    opacity:1;
+    transform: translateY(0);
+  }
+`;
 
+const addfadeUp = (fadeUp, delay) => {
+  if (fadeUp) {
+    return css`
+      opacity: 0;
+      animation: ${fadeUpAnimation} 0.5s ease-in forwards;
+      animation-delay: ${delay ? delay + "s" : ""};
+    `;
+  }
+};
+const addfadeIn = (fadeIn, delay) => {
+  if (fadeIn) {
+    return css`
+      opacity: 0;
+      animation: ${fadeInAnimation} 0.5s ease-in forwards;
+      animation-delay: ${delay ? delay + "s" : ""};
+    `;
+  }
+};
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
@@ -39,6 +76,7 @@ export const SectionTitle = styled.h2`
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
+  ${({ animateUp, delay }) => addfadeUp(animateUp, delay)};
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${(props) => (props.main ? "56px" : "48px")};
@@ -65,7 +103,7 @@ export const SectionText = styled.p`
   font-weight: 300;
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
-
+  ${({ animateUp, delay }) => addfadeUp(animateUp, delay)};
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
@@ -191,6 +229,7 @@ export const ButtonBack = styled.div`
   position: relative;
   overflow: hidden;
   opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
+  ${({ fadeIn, delay }) => addfadeIn(fadeIn, delay)};
   & p {
     margin: 0;
   }
