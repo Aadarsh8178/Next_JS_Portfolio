@@ -26,8 +26,8 @@ const Home = () => {
       <Timeline />
       <FreelanceWork />
       <Projects />
-      <Technologies />
       <Acomplishments />
+      <Technologies />
       <Testimonials />
       <Contact />
       <style jsx global>

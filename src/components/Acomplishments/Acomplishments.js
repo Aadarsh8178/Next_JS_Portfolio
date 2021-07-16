@@ -36,6 +36,8 @@ const Acomplishments = () => (
         </div>
       ))}
     </div>
+    <br />
+    <br />
   </Section>
 );
 
