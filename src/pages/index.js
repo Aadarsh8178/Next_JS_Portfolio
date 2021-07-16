@@ -7,6 +7,7 @@ import Timeline from "../components/TimeLine/TimeLine";
 import { Layout } from "../layout/Layout";
 import { Section } from "../styles/GlobalComponents";
 import Testimonials from "../components/Testimonials/Testimonials";
+import Acomplishments from "../components/Acomplishments/Acomplishments";
 import Contact from "../components/Contact";
 import { useEffect } from "react";
 import Aos from "aos";
@@ -26,6 +27,7 @@ const Home = () => {
       <FreelanceWork />
       <Projects />
       <Technologies />
+      <Acomplishments />
       <Testimonials />
       <Contact />
       <style jsx global>

@@ -280,3 +280,17 @@ export const work = [
     link: "https://www.maticstarter.in/",
   },
 ];
+
+export const articles = [
+  {
+    title:
+      "Uploading and Downloading Multiple Files and Handling CORS error on Firebase",
+    img: "/images/react-firebase.png",
+    link: "https://vaadarsh8178.medium.com/uploading-and-downloading-multiple-files-and-handling-cors-error-on-firebase-405779abe543",
+  },
+  {
+    title: "Handling Custom SVGs in React using Styled Components",
+    img: "/images/stylecomponents.png",
+    link: "https://vaadarsh8178.medium.com/handling-custom-svgs-in-react-using-styled-components-30d2739ff4cb",
+  },
+];
