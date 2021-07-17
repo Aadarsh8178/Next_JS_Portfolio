@@ -12,13 +12,7 @@ const Timeline = () => {
   const [active, setActive] = useState("exp");
 
   return (
-    <Section
-      id="about"
-      nopadding
-      data-aos="fade-right"
-      data-aos-duration="500"
-      data-aos-delay="1500"
-    >
+    <Section id="about" nopadding data-aos="fade-right" data-aos-duration="500">
       <SectionDivider divider />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
