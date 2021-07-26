@@ -277,7 +277,7 @@ export const work = [
   {
     desc: "Next js server side rendered web app",
     img: "https://firebasestorage.googleapis.com/v0/b/portfolio-b6252.appspot.com/o/maticstarter.jpeg?alt=media&token=26c806dc-269f-4adf-962c-ee04ad691a5b",
-    link: "https://www.maticstarter.in/",
+    link: "https://hungry-brahmagupta-11929f.netlify.app/",
   },
 ];
 
