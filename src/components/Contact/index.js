@@ -92,13 +92,6 @@ function Contact() {
           data-aos-delay="500"
         >
           <ContactDetails>
-            <FiPhone />
-            <div>
-              <ListTitle>Phone</ListTitle>
-              <p>+91-8178845614</p>
-            </div>
-          </ContactDetails>
-          <ContactDetails>
             <HiOutlineMail />
             <div>
               <ListTitle>Email</ListTitle>
