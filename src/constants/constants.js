@@ -261,14 +261,14 @@ export const companies = [
 export const testimonials = [
   {
     desc: "Aadarsh is a very focused and smart person. He has always delivered before timelines. He has a knack for coding. He single handed oh delivered a complex platform.",
-    img: "https://media-exp3.licdn.com/dms/image/C4E03AQG91ouQZ2M4iQ/profile-displayphoto-shrink_400_400/0/1613375161677?e=1629331200&v=beta&t=W2iz9-SBu3RdCdCC8uOzg4P1fTuMwmsHVaL8WqF4nVA",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolio-b6252.appspot.com/o/1613375161677.jfif?alt=media&token=3d4779f8-79cd-4c80-b392-d2060cf11287",
     linkedin: "https://www.linkedin.com/in/aastha-rajpal-abb06abb/",
     name: "Aastha Rajpal",
     subdesc: "Aastha Rajpal OYO- EMEA | DTU 2017",
   },
   {
     desc: "Adarsh was able to develop a full-stack product from scratch, perfectly as per our client’s requirements. His level of knowledge regarding the complex tech stack that was needed for this project was truly exceptional. Would vouch for him as a skilled and professional software engineer.",
-    img: "https://media-exp3.licdn.com/dms/image/C4E03AQEiJJkWGut9sw/profile-displayphoto-shrink_400_400/0/1609671651270?e=1629331200&v=beta&t=tE4aBNbJJxbHbUEGQO9HQBQsPMSYtyNnruFXbqKoaGw",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfolio-b6252.appspot.com/o/1609671651270.jfif?alt=media&token=5fc26df3-58a5-41e6-a242-73c44126121a",
     linkedin: "https://www.linkedin.com/in/prayagmukhi/",
     name: "Prayag Mukhi",
     subdesc: "Building Products and helping Scale Businesses.",
