@@ -314,4 +314,9 @@ export const articles = [
     img: "/images/stylecomponents.webp",
     link: "https://vaadarsh8178.medium.com/handling-custom-svgs-in-react-using-styled-components-30d2739ff4cb",
   },
+  {
+    title: "Optimising API Calls In React",
+    img: "/images/react-optimization.webp",
+    link: "https://vaadarsh8178.medium.com/optimising-api-calls-in-react-ec55fd9e39f",
+  },
 ];
