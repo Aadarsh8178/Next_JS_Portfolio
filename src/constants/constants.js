@@ -18,7 +18,17 @@ export const projects = [
     ],
     source: "https://ind-covid-tracker.herokuapp.com/",
     visit: "https://github.com/Aadarsh8178/Covid_Tracker",
-    id: -1,
+    id: 0,
+  },
+  {
+    title: "React GraphQL Reading List",
+    description: "You can perform read, create, delete operation on book",
+    learning: "GraphQL, Apollo Client, MongoDB",
+    image: "/images/graphql.webp",
+    tags: ["GraphQL", "Apollo Client", "React", "MongoDB", "Nodejs", "Express"],
+    source: "https://bpc-reading-list.herokuapp.com/",
+    visit: "https://github.com/Aadarsh8178/Graphql",
+    id: 1,
   },
   {
     title: "Angular Recipe Book",
@@ -36,7 +46,7 @@ export const projects = [
     ],
     source: "https://dazzling-cori-8bfcfa.netlify.app/",
     visit: "https://github.com/Aadarsh8178/Recipe-app-angular",
-    id: 0,
+    id: 2,
   },
   {
     title: "Vuejs Stock Trader",
@@ -48,7 +58,7 @@ export const projects = [
     tags: ["Vuejs", "Vuex", "Routing in Vuejs"],
     source: "https://vue-stock-trader.vercel.app/",
     visit: "https://github.com/Aadarsh8178/vue-stock-trader",
-    id: 1,
+    id: 3,
   },
   {
     title: "Nodejs UpRuntime  (Fullstack + CLI Tool)",
@@ -60,7 +70,7 @@ export const projects = [
     image: "/images/upruntime.webp",
     tags: ["Nodejs", "Node Core Modules"],
     visit: "https://github.com/Aadarsh8178/UpRuntime-fileStorage-",
-    id: 8,
+    id: 4,
   },
   {
     title: "Nextjs Looks",
@@ -72,7 +82,7 @@ export const projects = [
     tags: ["Nextjs", "CSS", "React Context Api", "React Hooks"],
     source: "https://bpc-gully-wear.vercel.app/",
     visit: "https://github.com/Aadarsh8178/GullyWear",
-    id: 2,
+    id: 5,
   },
   {
     title: "React Burger Builder",
@@ -91,7 +101,7 @@ export const projects = [
     ],
     source: "https://burger-builder-react-2d2be.firebaseapp.com/",
     visit: "https://github.com/Aadarsh8178/React-Burger-Builder",
-    id: 3,
+    id: 6,
   },
   {
     title: "Nodejs Weather App",
@@ -103,7 +113,7 @@ export const projects = [
     tags: ["Nodejs", "Express"],
     source: "https://bpc-weather-application.herokuapp.com/",
     visit: "https://github.com/Aadarsh8178/nodejs-weather-webserver",
-    id: 4,
+    id: 7,
   },
   {
     title: "Nodejs Task Manager",
@@ -129,7 +139,7 @@ export const projects = [
       "Sendgrid",
     ],
     visit: "https://github.com/Aadarsh8178/task-manager-API",
-    id: 5,
+    id: 8,
   },
   {
     title: "Nodejs Chat App",
@@ -142,7 +152,7 @@ export const projects = [
     tags: ["Nodejs", "WebSockets", "Socket.io"],
     source: "https://bpc-chat-app.herokuapp.com/",
     visit: "https://github.com/Aadarsh8178/Chat-app",
-    id: 6,
+    id: 9,
   },
   {
     title: "Github Finder",
@@ -155,7 +165,7 @@ export const projects = [
     tags: ["Javascript", "Bootstrap"],
     source: "https://bpc-github-finder.herokuapp.com/",
     visit: "https://github.com/Aadarsh8178/Github-Finder",
-    id: 7,
+    id: 10,
   },
 ];
 

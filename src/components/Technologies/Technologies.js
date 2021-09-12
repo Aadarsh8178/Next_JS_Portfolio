@@ -63,7 +63,9 @@ const Technologies = () => (
             <span className="badge bg-info me-2">Nodejs</span>
             <span className="badge bg-info me-2">Express</span>
             <span className="badge bg-info me-2">Firebase</span>
-            <span className="badge bg-info me-2">.Net</span>
+            <span className="badge bg-info me-2">GraphQL</span>
+            <span className="badge bg-info me-2">Django</span>
+            <span className="badge bg-info me-2">DRF</span>
             <span className="badge bg-info me-2">MongoDB</span>
           </ListParagraph>
         </ListContainer>
