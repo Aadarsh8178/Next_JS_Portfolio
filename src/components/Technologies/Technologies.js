@@ -61,6 +61,7 @@ const Technologies = () => (
           <ListParagraph>
             Experience with <br />
             <span className="badge bg-info me-2">Nodejs</span>
+            <span className="badge bg-info me-2">Hasura</span>
             <span className="badge bg-info me-2">Express</span>
             <span className="badge bg-info me-2">Firebase</span>
             <span className="badge bg-info me-2">GraphQL</span>

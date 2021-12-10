@@ -208,11 +208,18 @@ export const ExperienceTimeLineData = [
   },
   {
     year: "2021",
-    duration: "June - *",
+    duration: "June - Aug",
     text: "SDE 1",
     company: "Exxat Systems",
     tech: ["Angular", "C#", ".NET"],
   },
+  {
+    year: "2021",
+    duration: "Sep - *",
+    text: "Fullstack Developer",
+    company: "Level AI",
+    tech: ["React","Redux","Zustand","Styled Components","Antd","Hasura","Cubejs","Nodejs","DRF"]
+  }
 ];
 
 export const EducationTimeLineData = [

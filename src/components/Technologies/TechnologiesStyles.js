@@ -102,7 +102,7 @@ export const ListParagraph = styled.p`
 `;
 
 export const ListItem = styled.li`
-  max-width: 500px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 
